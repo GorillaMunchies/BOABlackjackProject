@@ -33,7 +33,7 @@ public class Deck {
     };
     String[] TYPES = {
             "1", "2", "3", "4", "5", "6", "7", "8",
-            "9", "Skip", "Reverse", "Draw 2"
+            "9", "Skip", "Reverse", "Draw-2"
     };
 
     public void createDeck() {
@@ -56,7 +56,7 @@ public class Deck {
         // add 4 wild cards
         int count = 0;
         while (count < 4) {
-            deck.add("Wild Card - Choose any color");
+            deck.add("Wild Card");
             count++;
         }
 
@@ -64,11 +64,11 @@ public class Deck {
         // add 4 black wild cards that have a draw 4
         count = 0;
         while (count < 4) {
-            deck.add("Wild Card - Choose any color and next person draws 4");
+            deck.add("Wild: Draw-4");
             count++;
         }
 
-        System.out.println(deck);
+//        System.out.println(deck);
     }
 
     int n = 108;
